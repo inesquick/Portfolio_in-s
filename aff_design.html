@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Affinity Designer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon/site.webmanifest">
+		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="home.html" class="logo">
+									<span class="symbol"><img src="images/home.png" alt="" /></span><span class="title">Home</span>
+								</a> 
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="3d.html">3D</a></li>
+							<li><a href="aff_design.html">Affinity Designer</a></li>
+							<li><a href="unity.html">Unity</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Affinity Designer - Création de fonds décrans et miniatures</h1>
+
+							<h3> Miniature de vidéos YouTube</h3>
+
+						<!-- Slideshow container -->
+							<div class="slideshow-container">
+
+						<!-- Full-width images with number and caption text -->
+							<div class="mySlides fade">
+	 							<div class="numbertext">1 / 4</div>
+	  								<img src="images/Aff/twice1.jpg" width="100%">
+							</div>
+							<div class="mySlides fade">
+								<div class="numbertext">2 / 4</div>
+									 <img src="images/Aff/txt1.png" width="100%">
+						   </div>
+						   <div class="mySlides fade">
+							<div class="numbertext">3 / 4</div>
+								 <img src="images/Aff/izone1.png" width="100%">
+					   		</div>
+					 		<div class="mySlides fade">
+								<div class="numbertext">4 / 4</div>
+								<img src="images/Aff/bts1.png" width="100%">
+				  			</div>
+							<div class="mySlides fade">
+								<div class="numbertext">4 / 4</div>
+								<img src="images/Aff/bts1.png" width="100%">
+				  			</div>
+							
+						<!-- Next and previous buttons -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+
+						</div>
+					</div>
+
+					<!--JAVA-->
+
+					<script>
+						let slideIndex = 1;
+						showSlides(slideIndex);
+						
+						function plusSlides(n) {
+						  showSlides(slideIndex += n);
+						}
+						
+						function currentSlide(n) {
+						  showSlides(slideIndex = n);
+						}
+						
+						function showSlides(n) {
+						  let i;
+						  let slides = document.getElementsByClassName("mySlides");
+						  let dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						  }
+						  for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "block";  
+						  dots[slideIndex-1].className += " active";
+						}
+					</script>
+						
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Check</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/inès-chtioui" class="icon brands style2 fa-linkedin" target="blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://youtu.be/SDoGlNm3bVA" class="icon brands style2 fa-youtube"><span class="label" target="blank">YouTube</span></a></li>
+									<li><a href="https://github.com/inesquick" class="icon brands style2 fa-github"><span class="label" target="blank">GitHub</span></a></li>
+									<li><a href="mailto:chtioui.ines22@yahoo.com" class="icon solid style2 fa-envelope"><span class="label" target="blank">Email</span></a></li>
+
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
